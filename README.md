@@ -2,7 +2,9 @@
 eureka的简单应用；eureka集群
 
 # 模块说明
-cloud-server-single模块是单点eureka-server服务；cloud-server-cluster是eureka-server集群；cloud-client是eureke客户端服务。
+- cloud-server-single模块是单点eureka-server服务
+- cloud-server-cluster是eureka-server集群
+- cloud-client是eureke客户端服务。
 
 # 启动说明
 启动单点eureka模块，客户端模块连接此eureka服务时，应启用cloud-client模块的application-single配置文件；
