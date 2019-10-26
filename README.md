@@ -12,7 +12,7 @@ eureka的简单应用；eureka集群
   - 127.0.0.1     eureka-server-peer2
   - 127.0.0.1    eureka-server-peer1
 - 单点eureka模块：
- - 启动单点eureka模块，客户端模块连接此eureka服务时，应启用cloud-client模块的application-single配置文件；
+  - 启动单点eureka模块，客户端模块连接此eureka服务时，应启用cloud-client模块的application-single配置文件；
 - eureka集群模块：
   - 启动eureka集群模块，应分别使用application-peer1.yml和application-peer2.yml两个配置文件开启两个eurake-server服务；
   - 启动eureka集群模块，客户端模块连接此eureka服务时，应启用cloud-client模块的application-cluster配置文件；
