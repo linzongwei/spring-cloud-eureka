@@ -17,4 +17,5 @@ eureka的简单应用；eureka集群
   - 启动eureka集群模块，应分别使用application-peer1.yml和application-peer2.yml两个配置文件开启两个eurake-server服务；
   - 启动eureka集群模块，客户端模块连接此eureka服务时，应启用cloud-client模块的application-cluster配置文件；
 
-
+# eurake-server页面
+  - eurake-server的服务名+eurake-server的端口，如http://eureka-server:8081/
