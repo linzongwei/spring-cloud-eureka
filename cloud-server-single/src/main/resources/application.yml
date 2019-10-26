@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: eureka-server
+eureka:
+  server:
+    #自我保护模式true，只有网络情况很差的时候才会开启
+    enable-self-preservation: false
+    #扫描失效服务的间隔时间
+    eviction-interval-timer-in-ms: 60000
+  client:
+    # 是否将自己作为客户端注册到注册中心
+    register-with-eureka: false
+    # 是否从注册中心获取注册信息
+    # 因为这是一个单点的EurekaServer，不需要同步其它EurekaServer节点的数据，故设为false
+    fetch-registry: false

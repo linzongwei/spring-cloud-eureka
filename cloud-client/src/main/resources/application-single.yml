@@ -1,0 +1,16 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: cloud-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8081/eureka/
+  instance:
+    # 发送心跳间隔
+    lease-renewal-interval-in-seconds: 30
+    # eureka服务收到最后一次心跳的等待时间，过后移除服务
+    lease-expiration-duration-in-seconds: 90
+    instance-id: ${spring.application.name}:${server.port}
+
